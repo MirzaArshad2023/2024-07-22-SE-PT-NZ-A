@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>Hello World</title>
+    <link rel="stylesheet" href="mystyles.css">
+</head>
+
+<body>
+    <h1>Hello World!!!</h1>
+    <div class="div2"><a href="https://www.institutedata.com">IOD</a></div>
+    <div class="div2"><a href="https://www.google.com">Search google</a></div>
+    <div><a href="https://www.amazon.com">Amazon</a></div>
+    <div class="div1">
+        <img src="https://m.media-amazon12121.com/images/I/51fHY0q5tqL._SX1500_.jpg" alt="Image cannot be loaded">
+        <img src="./HeadSet.jpg" alt="Image cannot be displayed">
+        <img src="./Test/KeyboardImage.jpg" alt="No image">
+    </div>
+    <div class="div1">
+        <table border="1">
+            <tr>
+                <th>S.No</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Age</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Bruce</td>
+                <td>Wills</td>
+                <td>40</td>
+                <td>NZ</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Will</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>NZ</td>
+            </tr>
+        </table>
+    </div>
+    <div class="div1">
+        <table border="1">
+            <tr>
+            <th>Row 1 column 1</th>
+            <th>Row 1 column 2</th>
+            <th>Row 1 column 3</th>
+            </tr>
+            <tr>
+            <td>Row 2 column 1</td>
+            <td>Row 2 column 2</td>
+            <td>Row 2 column 3</td>
+            </tr>
+            </table>
+    </div>
+    <div>
+        <p>Sample paragraph for demonstration</p>
+        <p>Second paragraph for demonstration</p>
+    </div>
+    <div>
+        <h1 id="header1">Heading at the bottom of the page</h1>
+    </div>
+    <div>
+        <h1 id="header2">Second Heading at the bottom of the page</h1>
+    </div>
+    <p>Third paragraph specified here for demonstration</p>
+    <div>
+        <button onclick="ShowAlert()">ClickMe</button>
+        <input type="button" onclick="ShowGoodBye()" value="ClickMe">
+    </div>
+</body>
+<script>
+
+    function ShowAlert()
+    {
+        document.getElementById("header1").style.color = "yellow"
+    }
+
+    function ShowGoodBye()
+    {
+       document.getElementById("header2").style.color = "green"
+    }
+
+</script>
+</html>
