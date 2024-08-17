@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            padding: 20px;
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+        }
+        .content-box{
+            box-sizing: content-box;
+            background-color: lightblue;
+            margin-bottom: 100px;
+        }
+        .border-box{
+            box-sizing: content-box;
+            background-color: lightgreen;
+            margin-top: 10px;
+        }
+        .smallbox{
+            width: 150px;
+            height: 150px;
+            background-color: gray;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <section class="content-box box">
+        <p>First</p>
+        <p>Second</p>
+    </section>
+    <section class="border-box box">
+        <p>First</p>
+        <p>Second</p>
+    </section>
+    <section class="smallbox">
+        <p>First more text here added asdklfjaklsfj asdflkjasdflkjaslkdfj askldjflkasdjflsdafjlfks</p>
+        <p>Second paragraph is a big</p>
+    </section>
+</body>
+</html>

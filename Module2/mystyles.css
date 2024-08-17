@@ -1,0 +1,54 @@
+.class1{
+    color: blue;
+    font-size: x-large;
+    font-style: italic;
+}
+.class2{
+    color: yellow
+}
+div{
+    background-color: gray;
+}
+table{
+    background-color: blue;
+}
+.div-green{
+    background-color: green;
+}
+/* Combinators */
+.div-green p{
+    color: bisque;
+}
+.div-green > .class2 {
+    color: yellow
+}
+#div1{
+    background-color: purple;
+}
+#Para3{
+    font-size: xx-large;
+    color: brown;
+}
+
+input[type="text"]{
+    color: red
+}
+input[type="email"]{
+    color: green;
+}
+h1, h2, h3, h4{
+    color: blue;
+
+}
+h5{
+    color: brown
+}
+a:hover{
+    background-color: green;
+    font-size: xx-large;
+}
+p::first-line{
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: bolder;
+}

@@ -71,16 +71,24 @@
     </div>
 </body>
 <script>
-
+    console.log('this is a Message')
+    console.info('this is info')
+    console.warn('this is a warning')
+    console.error('this is an error');
+    function Sum(a, b)
+    {
+        return a + b
+    }
     function ShowAlert()
     {
-        document.getElementById("header1").style.color = "yellow"
+       alert(Sum(Sum(4, 5), 10))
     }
 
     function ShowGoodBye()
     {
        document.getElementById("header2").style.color = "green"
+       console.log("Show good bye gets called")
     }
-
+    console.log("Page finished loading")
 </script>
 </html>

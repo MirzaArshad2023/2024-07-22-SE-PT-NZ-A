@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Response CSS</title>
+    <style>
+        body{
+            font-size: 20px;
+            color: blue
+        }
+        @media screen and (max-width:600px)
+        {
+            body{
+                font-size: 15px;
+                color: red;
+                }
+        }
+        @media screen  and (min-width: 800px) and (max-width: 1200px) {
+            p{
+                font-size: x-large;
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Media Query demonstration</h1>
+    <p>Paragraph for media query demonstration</p>
+    <p>Responsive CSS is used to target different types and dimensions</p>
+</body>
+</html>

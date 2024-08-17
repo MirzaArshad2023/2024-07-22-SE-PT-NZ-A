@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive images</title>
+    <style>
+        *{
+            color: white;
+            background-color: white;
+            width: 0px;
+            height: 0px;
+        }
+    </style>
+</head>
+<body>
+    <picture>
+        <source srcset="Asset/background-image.jpg" media="(max-width:600px)">
+        <source srcset="Asset/terrain.jpg" media="(max-width: 800px)">
+        <img src="Asset/terrain.jpg">
+    </picture>
+</body>
+</html>
