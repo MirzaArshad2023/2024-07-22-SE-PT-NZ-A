@@ -20,11 +20,17 @@ person.car = true
 person.isDirector = true
 console.log(person)
 
+
 const tv = { // object starts here
     brand: "Sony Bravia", // key-value pair. brand is the key, "Sony Bravia" is the value
     size: "55-inch", // values can be any data type
     model: 2023, // multiple key-value pairs are separated by commas
-    resolution: "4K" // the comma on the last key-value pair can be omitted
-    
+    resolution: "4K", // the comma on the last key-value pair can be omitted
+    turnOn: function(){
+        console.log("TV Turned on")
+    }
     } // object ends here. All data is stored in tv variable.
 tv.isPopular = true
+
+console.log(tv)
+tv.turnOn()
