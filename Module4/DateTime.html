@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date time</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.mi
+n.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/date-fns@3.6.0/cdn.min.js"></script>
+</head>
+<body>
+    <p>The current date using Javascript is <span id="currDate"></span></p>
+    <p>The current date using Moment JS is <span id="curr2Date"></span></p>
+    <p>The current date using Date fns is <span id="curr3Date"></span></p>
+</body>
+<script>
+    document.getElementById("currDate").innerHTML = new Date(); 
+    let nowMoment = moment();
+    document.getElementById("curr2Date").innerHTML = nowMoment.format('MMMM Do YYYY, h:mm:ss a');
+    document.getElementById("curr3Date").innerHTML = format(new Date(), "'Today is a' eeee")
+</script>
+</html>

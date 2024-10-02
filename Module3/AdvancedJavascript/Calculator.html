@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The select element</h1>
+
+<p>The select element is used to create a drop-down list.</p>
+
+
+  <label for="cars">Choose operation:</label>
+  <select name="operator" id="operator">
+    <option value="+">+</option>
+    <option value="/">/</option>
+    <option value="*">*</option>
+    <option value="-">-</option>
+  </select>
+  <br><br>
+  <input type="button" value="=" onclick="operatorSelected()">
+
+
+</body>
+<script>
+function operatorSelected()
+{
+	let x = document.getElementById("operator").value;
+    if(x == "/")
+    {
+        
+    }
+    if(x == "-")
+    {
+        
+    }
+}
+</script>
+</html>

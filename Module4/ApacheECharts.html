@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apache e charts</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+</head>
+<body>
+    <div id="main" style="width: 600px;height:400px;"></div>
+</body>
+<script>
+    // Initialize the echarts instance based on the prepared dom
+    var myChart = echarts.init(document.getElementById('main'));
+
+// Specify the configuration items and data for the chart
+var option = {
+  title: {
+    text: 'ECharts Getting Started Example'
+  },
+  tooltip: {},
+  legend: {
+    data: ['sales']
+  },
+  xAxis: {
+    data: ['Jewellery', 'Electronics', 'SHirts', 'Pants', 'Heels', 'Socks']
+  },
+  yAxis: {},
+  series: [
+    {
+      name: 'sales',
+      type: 'bar',
+      data: [15, 25, 36, 90, 10, 30]
+    }
+  ]
+};
+
+// Display the chart using the configuration items and data just specified.
+myChart.setOption(option);
+</script>
+</html>
