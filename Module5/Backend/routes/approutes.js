@@ -10,4 +10,6 @@ appRouter.get("/About", (req, res)=> res.send("This is a backend application dev
 
 appRouter.get("/test3", (req, res)=> res.send("Testing is under construction"))
 
+appRouter.get("/headers", (req, res)=> res.send(req.headers))
+
 module.exports = appRouter

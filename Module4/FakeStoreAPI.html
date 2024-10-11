@@ -58,7 +58,7 @@
         {
             const template = document.getElementById("car-template").content.cloneNode(true);
             template.querySelector('.card-title').innerText = product.title;
-            //template.querySelector('.card-img-top').src = product.image
+            template.querySelector('.card-img-top').src = product.image
             template.querySelector('.card-text').innerText = product.description;
             document.querySelector('#product-list').appendChild(template);
         }
